@@ -1,0 +1,63 @@
+# apache binary dir
+/httpd/bin
+/httpd/cgi-bin
+#/httpd/conf
+/httpd/conf/original
+/httpd/error
+/httpd/htdocs
+/httpd/icons
+/httpd/include
+/httpd/lib
+/httpd/logs
+/httpd/manual
+/httpd/modules
+/httpd/ABOUT_APACHE.txt
+/httpd/CHANGES.txt
+/httpd/INSTALL.txt
+/httpd/LICENSE.txt
+/httpd/NOTICE.txt
+/httpd/OPENSSL-NEWS.txt
+/httpd/OPENSSL-README.txt
+/httpd/README.txt
+
+# my global docker containers and images definition
+/docker
+
+# OSGeo4W binary dir
+/OSGeo4W
+
+# postgresql datadir
+/postgre
+/postgresql
+
+# [mysql,mariadb] datadir
+/mysql
+/mariadb
+
+# composer bin,data,cache dir
+/composer
+
+# node binary dir
+/node*
+
+# i forgot this one for
+/data*
+
+# php and httpd tmpdir
+/tmp/*
+
+# php dir
+/php5
+/php7
+/php8
+
+# The Mozilla CA certificate store in PEM format
+/cacert.pem
+
+# archives
+*.exe
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.phar
