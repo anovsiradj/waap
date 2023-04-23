@@ -42,13 +42,15 @@
 # i forgot this one for
 /data*
 
-# php and httpd tmpdir
+# server tmpdir
 /tmp/*
+!/tmp/.gitkeep
 
 # php dir
-/php5
-/php7
-/php8
+/php/
+/php5/
+/php7/
+/php8/
 
 # The Mozilla CA certificate store in PEM format
 /cacert.pem
