@@ -2,7 +2,6 @@
 /httpd/bin
 /httpd/cgi-bin
 #/httpd/conf
-/httpd/conf/original
 /httpd/error
 /httpd/htdocs
 /httpd/icons
