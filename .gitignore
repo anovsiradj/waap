@@ -34,7 +34,8 @@
 /mariadb
 
 # composer bin,data,cache dir
-/composer
+/composer/*
+!/composer/.gitkeep
 
 # node binary dir
 /node*
