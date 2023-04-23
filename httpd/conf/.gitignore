@@ -1,5 +1,10 @@
+/httpd_hosts.conf
+
+# dist folders
+/extra
 /original
 
+# dist files
 /charset.conv
 /magic
 /mime.types

@@ -1,0 +1,75 @@
+Listen 5001
+Listen 5002
+Listen 7001
+Listen 8001
+
+<VirtualHost *:5001>
+	ErrorLog "logs/5001.log"
+	CustomLog "logs/5001-custom.log" common
+
+	UnsetEnv PHPRC
+	FcgidInitialEnv PHPRC "${PHP5_ROOT}"
+	FcgidWrapper "${PHP5_ROOT}/php-cgi.exe" .php
+
+	DocumentRoot "D:/projects"
+	<Directory "D:/projects">
+		Options All
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+<VirtualHost *:5002>
+	ErrorLog "logs/5002.log"
+	CustomLog "logs/5002-custom.log" common
+
+	UnsetEnv PHPRC
+	FcgidInitialEnv PHPRC "${PHP5_ROOT}"
+	FcgidWrapper "${PHP5_ROOT}/php-cgi.exe" .php
+
+	DocumentRoot "C:/xampp/htdocs"
+	<Directory "C:/xampp/htdocs">
+		Options All
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+<VirtualHost *:7001>
+	ErrorLog "logs/7001.log"
+	CustomLog "logs/7001-custom.log" common
+
+	UnsetEnv PHPRC
+	FcgidInitialEnv PHPRC "${PHP7_ROOT}"
+	FcgidWrapper "${PHP7_ROOT}/php-cgi.exe" .php
+
+	DocumentRoot "D:/projects"
+	<Directory "D:/projects">
+		Options All
+		AllowOverride All
+		Require all granted
+	</Directory>
+
+	DocumentRoot "D:/projects"
+	<Directory "D:/projects">
+		Options All
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+<VirtualHost *:8001>
+	ErrorLog "logs/8001.log"
+	CustomLog "logs/8001-custom.log" common
+
+	UnsetEnv PHPRC
+	FcgidInitialEnv PHPRC "${PHP8_ROOT}"
+	FcgidWrapper "${PHP8_ROOT}/php-cgi.exe" .php
+
+	DocumentRoot "D:/projects"
+	<Directory "D:/projects">
+		Options All
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
