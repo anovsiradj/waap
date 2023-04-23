@@ -30,3 +30,7 @@ D:\server\httpd\bin\httpd.exe -k stop -n "AnoopApache"
 ```
 
 (penamaan service disesuaikan kebutuhan pribadi)
+
+# catatan
+
+provider untuk binary disarankan dari apachelounge, dikarenakan [apachehaus sedang hiatus](https://forum.apachehaus.com/announcements/apache-haus-project-is-on-hold/msg4727/#msg4727).
