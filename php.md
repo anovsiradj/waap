@@ -1,10 +1,13 @@
+# php
 
-# persiapan
+### persiapan
 
-- unduh PHP sesuai kebutuhan di https://windows.php.net/download/
-- ekstrak di dalam `./` dengan penamaan folder `php` atau dengan penamaan menggunakan prefix `php`.
+- copas dari `./php.ini.stub` jadi `./php.ini`
+- unduh PHP sesuai kebutuhan
+- ekstrak ke `./` dengan penamaan folder `php` atau dengan penamaan menggunakan prefix `php` (contoh `php5` atau `php7`).
+- unkomen `extension_dir`
 
-# kebutuhan extensions
+### kebutuhan extension
 
 - `curl`
 - `intl`
@@ -13,6 +16,7 @@
 - `fileinfo`
 - `mbstring`
 - `openssl`
+- `odbc`
 - `pgsql`
 - `mysql`
 - `mysqli`
@@ -22,9 +26,16 @@
 - `pdo_mysql`
 - `pdo_pgsql`
 - `pdo_sqlite`
+- `zip`
 
-# referensi
+### catatan
+
+- pada `./php.ini` penulisan konfigurasi, jangan pake spasi sebelum dan sesudah "=" karena tidak jalan di php5.
+- pada `./php.ini` baris awal file jangan kasih komen, entah kenapa jadi gak jalan.
+
+### referensi
 
 - https://windows.php.net/download/
 - https://windows.php.net/downloads/releases/archives/
 - https://museum.php.net/
+- https://mlocati.github.io/articles/php-windows-imagick.html

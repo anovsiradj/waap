@@ -1,36 +1,40 @@
+# httpd (Apache HTTP Server)
 
-# persiapan
+### persiapan
 
 - unduh `httpd.zip` dari https://www.apachelounge.com/download/
 - lalu ekstrak ke dalam folder `./httpd/`
-
 - unduh `mod_fcgid.zip` dari https://www.apachelounge.com/download/
-- lalu taruh berkas `mod_fcgid.so` ke dalam folder `./httpd/modules/`
+- lalu ekstrak `mod_fcgid.so` ke dalam folder ke `./httpd/modules/`
 
-# kebutuhan modules
+### kebutuhan module
 
-- `access_compat_module` supaya bisa pake `[Deny,Allow]` pada versi apache baru (karena legacy projects).
+- `access_compat_module` supaya bisa pake `[deny,allow]` di versi baru httpd, untuk kebutuhan legacy project.
 - `rewrite_module`
 - `expires_module`
 - `headers_module`
+- `cache_module`
 
-# pemasangan service
+### instalasi dengan service
 
 berdasarkan [dokumentasi](https://httpd.apache.org/docs/current/platform/windows.html#winsvc),
 ada beberapa perintah yang perlu dilakukan untuk memasang service:
 
 ```cmd
-D:\server\httpd\bin\httpd.exe -k install -n "AnoopApache"
-D:\server\httpd\bin\httpd.exe -n "AnoopApache" -t
-D:\server\httpd\bin\httpd.exe -k uninstall -n "AnoopApache"
+C:\waap\httpd\bin\httpd.exe -k install -n "waap_httpd"
+C:\waap\httpd\bin\httpd.exe -n "waap_httpd" -t
+C:\waap\httpd\bin\httpd.exe -k uninstall -n "waap_httpd"
 
-D:\server\httpd\bin\httpd.exe -k start -n "AnoopApache"
-D:\server\httpd\bin\httpd.exe -k restart -n "AnoopApache"
-D:\server\httpd\bin\httpd.exe -k stop -n "AnoopApache"
+C:\waap\httpd\bin\httpd.exe -k start -n "waap_httpd"
+C:\waap\httpd\bin\httpd.exe -k restart -n "waap_httpd"
+C:\waap\httpd\bin\httpd.exe -k stop -n "waap_httpd"
 ```
 
-(penamaan service disesuaikan kebutuhan pribadi)
+(untuk penamaan service `waap_httpd` bisa disesuaikan kebutuhan)
 
-# catatan
+### catatan
 
-provider untuk binary disarankan dari apachelounge, dikarenakan [apachehaus sedang hiatus](https://forum.apachehaus.com/announcements/apache-haus-project-is-on-hold/msg4727/#msg4727).
+penyedia binary disarankan menggunakan apachelounge, dikarenakan apachehaus sedang hiatus.
+
+- https://forum.apachehaus.com/announcements/apache-haus-project-is-on-hold/msg4727/#msg4727
+- https://forum.apachehaus.com/index.php?topic=1761.msg4799#msg4799

@@ -1,8 +1,9 @@
 
-**Windows Apache Anything PHP (WAAP)**
+# **Windows Apache Anything PHP (WAAP)**
 
-pasang server kamu (httpd dan php) dari nol tanpa XAMPP atau WampServer di Windows.
+pasang server kamu (httpd/apache dan php) dari nol tanpa XAMPP atau WampServer di Windows,
+yang bertujuan sebagai pembelajaran bagi saya dan (semoga saja juga) buat kamu juga.
 
-1. [httpd.md](./httpd.md)
-1. [cacert.md](./cacert.md)
-1. [php.md](./php.md)
+### [php.md](./php.md)
+### [httpd.md](./httpd.md)
+### [cacert.md](./cacert.md)

@@ -19,39 +19,22 @@
 /httpd/OPENSSL-README.txt
 /httpd/README.txt
 
-# my global docker containers and images definition
-/docker
-
-# OSGeo4W binary dir
-/OSGeo4W
-
-# postgresql datadir
-/postgre
-/postgresql
-
-# [mysql,mariadb] datadir
+/db
+/sql
+/pgsql
 /mysql
 /mariadb
+/couchdb
 
-# composer bin,data,cache dir
-/composer/*
-!/composer/.gitkeep
+/npm/
+/node/
+/node*/
 
-# node binary dir
-/node*
-
-# i forgot this one for
-/data*
-
-# server tmpdir
-/tmp/*
-!/tmp/.gitkeep
-
-# php dir
 /php/
-/php5/
-/php7/
-/php8/
+/php5*/
+/php7*/
+/php8*/
+/php.ini
 
 # The Mozilla CA certificate store in PEM format
 /cacert.pem
@@ -61,5 +44,6 @@
 *.zip
 *.rar
 *.tar
+*.gz
 *.tar.gz
 *.phar
