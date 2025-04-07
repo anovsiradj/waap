@@ -3,50 +3,16 @@
 # Aturan Praktis
 # 
 # semua host harus didefinisikan disini, supaya tidak lupa/typo/salah.
-# penamaan log harus disamakan dengan port, supaya mudah ditemukan.
+# penamaan log-file harus disamakan dengan port, supaya mudah ditemukan.
 # 
 ###########################################################################
 
-Listen 5001
-Listen 5002
-Listen 7001
-Listen 8001
+Listen 8700
+Listen 8800
 
-<VirtualHost *:5001>
-	ErrorLog "logs/5001.log"
-	CustomLog "logs/5001-custom.log" common
-
-	UnsetEnv PHPRC
-	FcgidInitialEnv PHPRC "${PHP5_ROOT}"
-	FcgidWrapper "${PHP5_ROOT}/php-cgi.exe" .php
-
-	DocumentRoot "C:/projects"
-	<Directory "C:/projects">
-		Options All
-		AllowOverride All
-		Require all granted
-	</Directory>
-</VirtualHost>
-
-<VirtualHost *:5002>
-	ErrorLog "logs/5002.log"
-	CustomLog "logs/5002-custom.log" common
-
-	UnsetEnv PHPRC
-	FcgidInitialEnv PHPRC "${PHP5_ROOT}"
-	FcgidWrapper "${PHP5_ROOT}/php-cgi.exe" .php
-
-	DocumentRoot "C:/xampp/htdocs"
-	<Directory "C:/xampp/htdocs">
-		Options All
-		AllowOverride All
-		Require all granted
-	</Directory>
-</VirtualHost>
-
-<VirtualHost *:7001>
-	ErrorLog "logs/7001.log"
-	CustomLog "logs/7001-custom.log" common
+<VirtualHost *:8700>
+	ErrorLog "logs/8700.log"
+	CustomLog "logs/8700-custom.log" common
 
 	UnsetEnv PHPRC
 	FcgidInitialEnv PHPRC "${PHP7_ROOT}"
@@ -67,9 +33,9 @@ Listen 8001
 	</Directory>
 </VirtualHost>
 
-<VirtualHost *:8001>
-	ErrorLog "logs/8001.log"
-	CustomLog "logs/8001-custom.log" common
+<VirtualHost *:8800>
+	ErrorLog "logs/8800.log"
+	CustomLog "logs/8800-custom.log" common
 
 	UnsetEnv PHPRC
 	FcgidInitialEnv PHPRC "${PHP8_ROOT}"

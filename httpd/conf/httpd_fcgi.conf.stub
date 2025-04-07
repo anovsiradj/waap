@@ -21,13 +21,18 @@ FcgidInitialEnv TEMP "${_ROOT}/tmp"
 # 256MB = 268435456
 # 512MB = 536870912
 # 1GB   = 1073741824
+# 3GB   = 3221225472
 # 5GB   = 5368709120
 # 10GB  = 10737418240
+
 FcgidMaxRequestLen 1073741824
+
 FcgidIOTimeout 3600
 FcgidConnectTimeout 3600
 
-AddHandler fcgidPhpScript .php
+FcgidOutputBufferSize 0
+
+AddHandler fcgid-script .php
 <FilesMatch "\.php$">
-	SetHandler fcgidPhpScript
+	SetHandler fcgid-script
 </FilesMatch>

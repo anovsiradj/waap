@@ -3,9 +3,10 @@
 ### persiapan
 
 - copas dari `./php.ini.stub` jadi `./php.ini`
-- unduh PHP sesuai kebutuhan
+- unduh setiap versi yang dibutuhkan
 - ekstrak ke `./` dengan penamaan folder `php` atau dengan penamaan menggunakan prefix `php` (contoh `php5` atau `php7`).
-- unkomen `extension_dir`
+- copas `/php/php.ini` dari `/php/php.ini-development` lalu atur setiap versinya
+- hapus komen `extension_dir` setiap versinya
 
 ### kebutuhan extension
 

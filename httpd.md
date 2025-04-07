@@ -24,8 +24,8 @@
 - cari dan ubah jadi `ServerAdmin "${SERVER_MAIL}"`
 - cari dan ubah jadi `ServerName "${SERVER_HOST}"`
 - cari dan ubah jadi `LogLevel notice`
+- cari dan ubah jadi `DirectoryIndex index.html index.php`
 - cari dan komen `Listen 80`
-- cari dan tambah jadi `DirectoryIndex index.html index.php`
 - akhiran tambah `Include conf/httpd_fcgi.conf`
 - akhiran tambah `Include conf/httpd_hosts.conf`
 
