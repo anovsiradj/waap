@@ -40,7 +40,7 @@ C:\waap\httpd\bin\httpd.exe
 
 ### instalasi service
 
-beberapa perintah yang perlu dilakukan untuk instalasi service
+supaya httpd bisa dieksekusi otomatis, perlu dilakukan instalasi service.
 
 ```cmd
 C:\waap\httpd\bin\httpd.exe -k install -n "waap_httpd"
