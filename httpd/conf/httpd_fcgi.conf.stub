@@ -3,7 +3,8 @@
 # Aturan Praktis
 # 
 # HTTPd selalu gunakan v2 terbaru.
-# PHP selalu gunakan versi terbaru dari tiap major [v5,v7,v8].
+# PHP selalu gunakan versi baru dari tiap major [php5,php7,php8],
+# juga bisa pake versi baru tiap minor jika dibutuhkan [php80,php81,dst].
 # 
 ###########################################################################
 
@@ -26,7 +27,7 @@ FcgidMaxRequestLen 1073741824
 FcgidIOTimeout 3600
 FcgidConnectTimeout 3600
 
-AddHandler fcgid-script .php
+AddHandler fcgidPhpScript .php
 <FilesMatch "\.php$">
-	SetHandler fcgid-script
+	SetHandler fcgidPhpScript
 </FilesMatch>

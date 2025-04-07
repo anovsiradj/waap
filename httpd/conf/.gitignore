@@ -1,6 +1,9 @@
+/httpd.conf
+/httpd_fcgi.conf
+/httpd_envs.conf
 /httpd_hosts.conf
 
-# dist folders
+# dist dirs
 /extra
 /original
 

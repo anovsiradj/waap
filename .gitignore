@@ -47,3 +47,6 @@
 *.gz
 *.tar.gz
 *.phar
+
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,18 @@
+###########################################################################
+# 
+# Aturan Praktis
+# 
+# semua konfigurasi harus didefinisikan disini, supaya tidak lupa/typo/salah.
+# 
+###########################################################################
+
+Define _ROOT "C:/waap"
+
+Define HTTPD_ROOT "C:/waap/httpd"
+
+Define PHP5_ROOT "C:/waap/php5"
+Define PHP7_ROOT "C:/waap/php7"
+Define PHP8_ROOT "C:/waap/php8"
+
+Define SERVER_MAIL "anov.siradj22@gmail.com"
+Define SERVER_HOST "localhost"

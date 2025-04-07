@@ -31,7 +31,7 @@
 ### catatan
 
 - pada `./php.ini` penulisan konfigurasi, jangan pake spasi sebelum dan sesudah "=" karena tidak jalan di php5.
-- pada `./php.ini` baris awal file jangan kasih komen, entah kenapa jadi gak jalan.
+- pada `./php.ini` awalan file jangan kasih komen, entah kenapa jadi gak jalan.
 
 ### referensi
 

@@ -1,3 +1,12 @@
+###########################################################################
+# 
+# Aturan Praktis
+# 
+# semua host harus didefinisikan disini, supaya tidak lupa/typo/salah.
+# penamaan log harus disamakan dengan port, supaya mudah ditemukan.
+# 
+###########################################################################
+
 Listen 5001
 Listen 5002
 Listen 7001
@@ -11,8 +20,8 @@ Listen 8001
 	FcgidInitialEnv PHPRC "${PHP5_ROOT}"
 	FcgidWrapper "${PHP5_ROOT}/php-cgi.exe" .php
 
-	DocumentRoot "D:/projects"
-	<Directory "D:/projects">
+	DocumentRoot "C:/projects"
+	<Directory "C:/projects">
 		Options All
 		AllowOverride All
 		Require all granted
@@ -43,15 +52,15 @@ Listen 8001
 	FcgidInitialEnv PHPRC "${PHP7_ROOT}"
 	FcgidWrapper "${PHP7_ROOT}/php-cgi.exe" .php
 
-	DocumentRoot "D:/projects"
-	<Directory "D:/projects">
+	DocumentRoot "C:/projects"
+	<Directory "C:/projects">
 		Options All
 		AllowOverride All
 		Require all granted
 	</Directory>
 
-	DocumentRoot "D:/projects"
-	<Directory "D:/projects">
+	DocumentRoot "C:/projects"
+	<Directory "C:/projects">
 		Options All
 		AllowOverride All
 		Require all granted
@@ -66,8 +75,8 @@ Listen 8001
 	FcgidInitialEnv PHPRC "${PHP8_ROOT}"
 	FcgidWrapper "${PHP8_ROOT}/php-cgi.exe" .php
 
-	DocumentRoot "D:/projects"
-	<Directory "D:/projects">
+	DocumentRoot "C:/projects"
+	<Directory "C:/projects">
 		Options All
 		AllowOverride All
 		Require all granted
