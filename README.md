@@ -2,12 +2,13 @@
 # **Windows Apache Anything PHP (WAAP)**
 
 pasang server kamu (httpd/apache dan php) dari nol tanpa XAMPP atau WampServer di Windows,
-yang bertujuan sebagai pembelajaran bagi saya dan (semoga saja juga) buat kamu juga.
+yang bertujuan sebagai pembelajaran untuk saya dan (semoga) untuk kamu juga.
 
-### [php.md](./php.md)
-### [composer.md](./composer.md)
-### [cacert.md](./cacert.md)
-### [httpd.md](./httpd.md)
+- [php.md](./php.md)
+- [composer.md](./composer.md)
+- [cacert.md](./cacert.md)
+- [httpd.md](./httpd.md)
+- terakhir tambahkan path `./bin` ke `Path` pada **system properties — environment variables**
 
 ### perbandingan
 
