@@ -1,2 +1,2 @@
 @echo off
-C:\waap\php\php.exe %*
+"C:\waap\php\php.exe" %*

@@ -5,8 +5,9 @@ pasang server kamu (httpd/apache dan php) dari nol tanpa XAMPP atau WampServer d
 yang bertujuan sebagai pembelajaran bagi saya dan (semoga saja juga) buat kamu juga.
 
 ### [php.md](./php.md)
-### [httpd.md](./httpd.md)
+### [composer.md](./composer.md)
 ### [cacert.md](./cacert.md)
+### [httpd.md](./httpd.md)
 
 ### perbandingan
 
