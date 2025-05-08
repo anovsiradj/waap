@@ -19,12 +19,15 @@
 /httpd/OPENSSL-README.txt
 /httpd/README.txt
 
-/db
-/sql
-/pgsql
-/mysql
-/mariadb
-/couchdb
+/nginx*/
+
+/db*/
+/sql*/
+/pgsql*/
+/mysql*/
+/mariadb*/
+/couchdb*/
+/postgresql*/
 
 /npm/
 /node/
