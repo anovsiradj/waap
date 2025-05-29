@@ -31,7 +31,7 @@
 
 ### eksekusi console
 
-httpd bisa dieksekusi langsung melalui console secara manual
+httpd bisa dieksekusi langsung melalui console secara manual,
 
 ```cmd
 C:\waap\httpd\bin\httpd.exe -t
@@ -41,6 +41,7 @@ C:\waap\httpd\bin\httpd.exe
 ### instalasi service
 
 supaya httpd bisa dieksekusi otomatis, perlu dilakukan instalasi service.
+kemungkinan perlu dijalankan dengan `runAsAdmin`.
 
 ```cmd
 C:\waap\httpd\bin\httpd.exe -k install -n "waap_httpd"

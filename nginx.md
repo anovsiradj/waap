@@ -8,11 +8,11 @@
 ### eksekusi
 
 ```cmd
-C:\waap\nginx\nginx.exe -v
-C:\waap\nginx\nginx.exe
-```
+cd C:\waap\nginx\
 
-```cmd
-C:\waap\nginx\nginx.exe -s stop
-C:\waap\nginx\nginx.exe -s quit
+.\nginx.exe -v
+.\nginx.exe
+
+.\nginx.exe -s stop
+.\nginx.exe -s quit
 ```

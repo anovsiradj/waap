@@ -7,12 +7,12 @@
 # 
 ###########################################################################
 
-Listen 8700
-Listen 8800
+Listen 5074
+Listen 5084
 
-<VirtualHost *:8700>
-	ErrorLog "logs/8700.log"
-	CustomLog "logs/8700-custom.log" common
+<VirtualHost *:5074>
+	ErrorLog "logs/5074.log"
+	CustomLog "logs/5074-custom.log" common
 
 	UnsetEnv PHPRC
 	FcgidInitialEnv PHPRC "${PHP7_ROOT}"
@@ -33,9 +33,9 @@ Listen 8800
 	</Directory>
 </VirtualHost>
 
-<VirtualHost *:8800>
-	ErrorLog "logs/8800.log"
-	CustomLog "logs/8800-custom.log" common
+<VirtualHost *:5084>
+	ErrorLog "logs/5084.log"
+	CustomLog "logs/5084-custom.log" common
 
 	UnsetEnv PHPRC
 	FcgidInitialEnv PHPRC "${PHP8_ROOT}"
