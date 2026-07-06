@@ -8,7 +8,7 @@
 ###########################################################################
 
 Listen 5074
-Listen 5084
+Listen 5085
 
 <VirtualHost *:5074>
 	ErrorLog "logs/5074.log"
@@ -24,22 +24,15 @@ Listen 5084
 		AllowOverride All
 		Require all granted
 	</Directory>
-
-	DocumentRoot "C:/projects"
-	<Directory "C:/projects">
-		Options All
-		AllowOverride All
-		Require all granted
-	</Directory>
 </VirtualHost>
 
-<VirtualHost *:5084>
-	ErrorLog "logs/5084.log"
-	CustomLog "logs/5084-custom.log" common
+<VirtualHost *:5085>
+	ErrorLog "logs/5085.log"
+	CustomLog "logs/5085-custom.log" common
 
 	UnsetEnv PHPRC
-	FcgidInitialEnv PHPRC "${PHP8_ROOT}"
-	FcgidWrapper "${PHP8_ROOT}/php-cgi.exe" .php
+	FcgidInitialEnv PHPRC "${PHP85_ROOT}"
+	FcgidWrapper "${PHP85_ROOT}/php-cgi.exe" .php
 
 	DocumentRoot "C:/projects"
 	<Directory "C:/projects">

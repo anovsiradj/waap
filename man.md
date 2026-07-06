@@ -1,14 +1,10 @@
 
 # Manager
 
-## `./man-php.sh`
+## `./man-php.py`
 
-```sh
-# powershell
-& "C:\Program Files\Git\bin\bash.exe"
+## **[TODO]** `./man-httpd.py`
 
-# bash
-cd /c/wasp
+## **[TODO]** `./man-node.py`
 
-./man-php.sh
-```
+## **[TODO]** `./man-webp.py`
