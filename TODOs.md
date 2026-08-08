@@ -13,3 +13,5 @@ the usage will be something like:
 ./man-nginx.sh
 ./man-caddy.sh
 ```
+
+rename jadi vman (version manager).
